@@ -1,0 +1,6 @@
+@import "../utils/vars";
+
+@mixin regular-text {
+  font-family: $global-font-family;
+  font-weight: 300;
+}

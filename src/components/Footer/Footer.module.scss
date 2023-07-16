@@ -1,0 +1,131 @@
+@import "../../styles/utils/vars";
+@import "../../styles/utils/mixins";
+@import "../../styles/fonts/typography";
+
+$link-color: #929292;
+
+.footer {
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include onTablet {
+      flex-direction: column;
+      position: relative;
+    }
+  }
+
+  &__logo-image {
+    width: 100px;
+    height: 30px;
+
+    @include onTablet {
+      position: relative;
+      bottom: 35px;
+      width: 150px;
+      height: 45px;
+    }
+
+    @include onDesktop {
+      bottom: 30px;
+      width: 235px;
+      height: 60px;
+    }
+  }
+
+  &__logo-text {
+    display: none;
+
+    @include onTablet {
+      position: absolute;
+      bottom: 25px;
+      display: block;
+      margin: 0;
+      @include regular-text;
+      color: $link-color;
+      font-size: 10px;
+      line-height: 13px;
+    }
+
+    @include onDesktop {
+      font-size: 12px;
+      line-height: 15px;
+      bottom: 10px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    background-color: $secondary-color;
+    height: 200px;
+    justify-content: center;
+    gap: 20px;
+
+    @include onTablet {
+      height: 245px;
+      flex-direction: row;
+      padding: 0 30px;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    @include onDesktop {
+      gap: 20px;
+      padding: 0 150px;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+    justify-content: space-evenly;
+
+    @include onTablet {
+      gap: 30px;
+    }
+
+    @include onDesktop {
+      gap: 170px;
+    }
+  }
+
+  &__nav-item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__nav-link {
+    text-decoration: none;
+    @include regular-text;
+    color: $link-color;
+    font-size: 10px;
+    line-height: 13px;
+    cursor: pointer;
+
+    @include onTablet {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+
+  &__info {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color;
+  }
+
+  &__info-text {
+    @include regular-text;
+    color: #595959;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.scss';
+import Footer from './components/Footer';
 
 interface Props {
   onClick: () => void;
@@ -18,10 +18,8 @@ export const Provider: React.FC<Props> = React.memo(
 
 export const App: React.FC = () => {
   return (
-    <div className="starter">
-      <Provider onClick={() => ({})}>
-        <TodoList />
-      </Provider>
-    </div>
+    <main>
+      <Footer />
+    </main>
   );
 };
