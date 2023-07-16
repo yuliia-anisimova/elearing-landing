@@ -1,0 +1,29 @@
+@import "../../styles/utils/vars";
+@import "../../styles/utils/mixins";
+@import "../../styles/fonts/typography";
+
+.contact {
+  background-color: $accent-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+
+  &__title {
+    text-transform: capitalize;
+    @include regular-title;
+    color: $white-color;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+
+  &__info {
+    padding: 0;
+    margin: 0 0 40px 0;
+    @include regular-text;
+    font-size: 20px;
+    line-height: 24px;
+    color: $white-color;
+  }
+}

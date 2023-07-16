@@ -1,0 +1,65 @@
+@import "../../styles/utils/vars";
+@import "../../styles/utils/mixins";
+@import "../../styles/fonts/typography";
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 690px;
+
+  &__input {
+    display: block;
+    border: none;
+    border-radius: 30px;
+    height: 55px;
+    background-color: #41A297;
+    @include regular-text;
+    color: $white-color;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 0 30px;
+
+    &::placeholder {
+      @include regular-text;
+      color: $white-color;
+      font-size: 15px;
+      line-height: 20px;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__message {
+    resize: none;
+    border: none;
+    @include regular-text;
+    color: $white-color;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 30px;
+    background-color: #41A297;
+    border-radius: 30px;
+    height: 180px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__button {
+    width: 35%;
+    border: 1px solid $white-color;
+    background-color: transparent;
+    color: $white-color;
+    @include semi-bold-text;
+    align-self: center;
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    line-height: 24px;
+    cursor: pointer;
+  }
+}
