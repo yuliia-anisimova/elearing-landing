@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
       <div className={footerContent}>
         <div className={footerLogo}>
           <img
-            src="/img/logo/logo-gray.svg"
+            src="img/logo/logo-gray.svg"
             alt="Logo"
             className={footerLogoImage}
           />
