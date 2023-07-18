@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from './components/Footer';
 import ContactSection from './components/ContactSection/ContactSection';
+import BenefitsSection from './components/BenefitsSection/BenefitsSection';
 
 interface Props {
   onClick: () => void;
@@ -20,6 +21,7 @@ export const Provider: React.FC<Props> = React.memo(
 export const App: React.FC = () => {
   return (
     <main>
+      <BenefitsSection />
       <ContactSection />
       <Footer />
     </main>
