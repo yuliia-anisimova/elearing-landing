@@ -20,7 +20,7 @@ const BenefitsSection: React.FC = () => {
       <h2 className={benefitsTitle}>Instructional Design</h2>
       <div className={benefitsInfo}>
         <div className={benefitsImage}>
-          <img src="/img/images/benefits-1.png" alt="People" />
+          <img src="img/images/benefits-1.png" alt="People" />
         </div>
         <div>
           <h3 className={benefitsInfoTitle}>We know learning inside and out</h3>
@@ -65,7 +65,7 @@ const BenefitsSection: React.FC = () => {
           </ul>
         </div>
         <div className={benefitsImage}>
-          <img src="/img/images/benefits-2.png" alt="People" />
+          <img src="img/images/benefits-2.png" alt="People" />
         </div>
       </div>
     </section>
