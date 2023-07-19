@@ -10,6 +10,16 @@
   font-weight: 400;
 }
 
+@mixin bold-text {
+  font-family: $global-font-family;
+  font-weight: 600;
+}
+
+@mixin extra-light-text {
+  font-family: $global-font-family;
+  font-weight: 200;
+}
+
 @mixin regular-title {
   font-family: $global-font-family;
   font-weight: 600;

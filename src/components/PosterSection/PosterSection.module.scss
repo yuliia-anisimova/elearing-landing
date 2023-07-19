@@ -1,0 +1,114 @@
+@import "../../styles/utils/vars";
+@import "../../styles/utils/mixins";
+@import "../../styles/fonts/typography";
+
+.poster {
+  display: flex;
+  flex-direction: column;
+
+  &__content {
+    background-image: url("../../images/poster-1.png");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    gap: 180px;
+    padding-top: 25px;
+  }
+
+  &__line {
+    height: 10px;
+    width: 90%;
+    background-color: $accent-color;
+    align-self: center;
+  }
+
+  &__info {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include onTablet {
+      align-items: flex-start;
+      width: 35%;
+    }
+  }
+
+  &__title {
+    @include bold-text;
+    font-size: 50px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: $text-color-dark;
+    padding: 0;
+    margin: 0 0 5px;
+
+    @include onTablet {
+      font-size: 60px;
+    }
+
+    @include onDesktop {
+      font-size: 75px;
+    }
+  }
+
+  &__text {
+    text-transform: capitalize;
+    @include extra-light-text;
+    padding: 0;
+    margin: 0 0 35px;
+    color: $text-color-dark;
+    font-size: 20px;
+    line-height: 100%;
+
+    @include onTablet {
+      font-size: 20px;
+    }
+
+    @include onDesktop {
+      font-size: 35px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    padding: 15px 15px;
+    background-color: $accent-color;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white-color;
+    border-radius: 40px;
+    @include semi-bold-text;
+    font-size: 16px;
+    line-height: 100%;
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 20px;
+
+    @include onTablet {
+      width: 50%;
+    }
+
+    @include onDesktop {
+      width: 20%;
+    }
+
+    @include onDesktop {
+      &:hover {
+        background-color: darken($accent-color, 10%);
+      }
+    }
+  }
+
+  &__image {
+    display: none;
+
+    @include onTablet {
+      display: block;
+    }
+  }
+}
