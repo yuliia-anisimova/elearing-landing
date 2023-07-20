@@ -1,0 +1,45 @@
+@import "../../styles/utils/vars";
+@import "../../styles/utils/mixins";
+@import "../../styles/fonts/typography";
+
+.services-section {
+  padding: 65px 200px 200px 200px;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    @include regular-title;
+    color: #999B9A;
+    margin: 0 0 35px;
+    align-self: center;
+  }
+
+  &__search {
+    height: 45px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3434341A;
+    margin-bottom: 75px;
+    padding: 0 20px;
+    border-radius: 40px;
+  }
+
+  &__search-input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    width: 90%;
+    height: 100%;
+    @include regular-text;
+    font-size: 16px;
+    line-height: 24px;
+
+    &::placeholder {
+      @include regular-text;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}

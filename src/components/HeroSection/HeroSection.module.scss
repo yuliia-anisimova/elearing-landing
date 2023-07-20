@@ -1,0 +1,23 @@
+@import "../../styles/utils/vars";
+@import "../../styles/utils/mixins";
+@import "../../styles/fonts/typography";
+
+.hero {
+  display: flex;
+  flex-direction: column;
+
+  &__services {
+    background-image: url("../../images/hero-poster.png");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 92vh;
+  }
+
+  &__line {
+    height: 10px;
+    width: 90%;
+    background-color: $accent-color;
+    align-self: center;
+  }
+}
