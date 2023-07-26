@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
 
-  &::before {
+  &::after {
     content: url('../../images/dark-theme-icon.svg');
     display: flex;
     align-items: center;
@@ -26,7 +26,7 @@
     height: 40px;
     border-radius: 50%;
     border: 1px solid #343434;
-    transition: .5s ease;
+    transition: 0.2s ease-in-out;
     box-sizing: border-box;
     position: relative;
     z-index: 2;
@@ -36,7 +36,7 @@
     background-color: #EBEBEB;
   }
 
-  &:checked::before {
+  &:checked::after {
     content: url('../../images/light-theme-icon.svg');
     display: flex;
     align-items: center;

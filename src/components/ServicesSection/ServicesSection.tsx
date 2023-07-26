@@ -7,6 +7,8 @@ import { Service } from '../../types/service';
 import ServicesList from '../ServicesList/ServicesList';
 import classes from './ServicesSection.module.scss';
 import Search from '../icons/search/search';
+import { useTheme } from '../../providers/ThemeContext';
+import SearchLight from '../icons/searchLight/searchLight';
 
 const {
   'services-section': servicesSection,
@@ -45,6 +47,7 @@ const services: Service[] = [
 const ServicesSection = () => {
   const [visibleServices, setVisibleservices] = useState<Service[]>(services);
   const [query, setQuery] = useState('');
+  const { theme } = useTheme();
 
   useEffect(() => {
     if (query.length > 0) {
@@ -71,7 +74,9 @@ const ServicesSection = () => {
           className={servicesSectionSearchInput}
           placeholder="Search"
         />
-        <Search />
+        {theme === 'dark'
+          ? <SearchLight />
+          : <Search />}
       </form>
       <ServicesList services={visibleServices} />
     </section>

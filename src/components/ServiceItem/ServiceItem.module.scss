@@ -19,6 +19,7 @@
     text-transform: uppercase;
     margin: 0 0 10px 0;
     width: 75%;
+    color: $services-text-color;
   }
 
   &__line {
@@ -30,5 +31,6 @@
 
   &__info {
     margin: 0;
+    color: $services-text-color;
   }
 }

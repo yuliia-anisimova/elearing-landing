@@ -12,11 +12,14 @@
     background-repeat: no-repeat; 
     background-size: cover;
     height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__line {
     height: 10px;
-    width: 90%;
+    width: 100%;
     background-color: $accent-color;
     align-self: center;
   }

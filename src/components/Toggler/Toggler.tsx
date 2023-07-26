@@ -2,6 +2,7 @@
 import React, { ChangeEvent, useState } from 'react';
 import cn from 'classnames';
 import classes from './Toggler.module.scss';
+import { useTheme } from '../../providers/ThemeContext';
 
 const {
   checkbox,
@@ -12,9 +13,11 @@ const {
 
 const Toggler = () => {
   const [isChecked, setIsChecked] = useState(false);
+  const { toggleTheme } = useTheme();
 
   const handleCheckboxChange = (event: ChangeEvent<HTMLInputElement>) => {
     setIsChecked(event.target.checked);
+    toggleTheme();
   };
 
   return (
@@ -23,6 +26,7 @@ const Toggler = () => {
         type="checkbox"
         className={checkbox}
         onChange={handleCheckboxChange}
+        checked={isChecked}
       />
       {isChecked
         ? <p className={checkboxLabelText}>daymode</p>

@@ -8,6 +8,7 @@
   align-items: center;
   padding: 20px;
   gap: 30px;
+  background-color: $bg-color;
 
   @include onDesktop {
     padding: 50px 50px 140px;
@@ -28,7 +29,7 @@
     width: 80%;
     justify-content: center;
     align-items: center;
-    color: #424242;
+    color: $toggler-text-color;
 
 
     @include onDesktop {

@@ -6,6 +6,7 @@
   padding: 65px 200px 200px 200px;
   display: flex;
   flex-direction: column;
+  background-color: $bg-color;
 
   &__title {
     @include regular-title;
@@ -20,7 +21,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #3434341A;
+    background-color: $search-bg-color;
     margin-bottom: 75px;
     padding: 0 20px;
     border-radius: 40px;
@@ -35,11 +36,17 @@
     @include regular-text;
     font-size: 16px;
     line-height: 24px;
+    color: $search-text-color;
 
     &::placeholder {
       @include regular-text;
       font-size: 16px;
       line-height: 24px;
+      color: $search-text-color;
     }
+  }
+
+  &__search-icon {
+    fill: $search-icon-color;
   }
 }

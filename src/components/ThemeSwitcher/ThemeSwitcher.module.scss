@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $white-color;
+  background-color: $toggler-bg-color;
   border-radius: 20px;
   width: 260px;
   height: 400px;
@@ -34,6 +34,6 @@
     @include semi-bold-text;
     font-size: 16px;
     line-height: 20px;
-    color: $text-color-dark;
+    color: $toggler-text-color;
   }
 }

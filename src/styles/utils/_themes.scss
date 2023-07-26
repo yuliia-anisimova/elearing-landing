@@ -1,0 +1,22 @@
+:root,
+[data-theme="dark"] {
+  --bg-color: #343434;
+  --text-color: #ffffff;
+  --toggler-bg-color: #414141;
+  --toggler-text-color: #ffffff;
+  --services-text-color: #ffffff;
+  --search-bg-color: #FFFFFF1A;
+  --search-text-color: #ffffff;
+  --search-icon-color: #ffffff;
+}
+
+[data-theme="light"] {
+  --bg-color: #ffffff;
+  --text-color: #212121;
+  --toggler-bg-color: #ffffff;
+  --toggler-text-color: #424242;
+  --services-text-color: #212121;
+  --search-bg-color: #3434341A;
+  --search-text-color: #343434;
+  --search-icon-color: #343434;
+}
