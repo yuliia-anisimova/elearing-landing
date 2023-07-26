@@ -5,6 +5,7 @@
 .poster {
   display: flex;
   flex-direction: column;
+  background-color: $bg-color;
 
   &__content {
     background-image: url("../../images/poster-1.png");
