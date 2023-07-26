@@ -1,0 +1,74 @@
+@import "../../styles/utils/vars";
+@import "../../styles/utils/mixins";
+@import "../../styles/fonts/typography";
+
+.checkbox {
+  appearance: none;
+  background: #fff;
+  width: 110px;
+  height: 30px;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  background-color: #343434;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: url('../../images/dark-theme-icon.svg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    position: absolute;
+    left: -20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #343434;
+    transition: .5s ease;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+  }
+
+  &:checked {
+    background-color: #EBEBEB;
+  }
+
+  &:checked::before {
+    content: url('../../images/light-theme-icon.svg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 90px;
+    border: 1px solid #EBEBEB;
+  }
+
+  &__container {
+    position: relative;
+    width: 110px;
+    height: 30px;
+  }
+
+  &__label-text {
+    margin: 0;
+    @include semi-bold-text;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #343434;
+    position: absolute;
+    top: 60%;
+    left: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  &__night-label {
+    color: $white-color;
+    position: absolute;
+    left: 30px;
+  }
+}

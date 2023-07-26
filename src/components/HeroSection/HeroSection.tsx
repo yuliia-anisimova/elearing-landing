@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from './HeroSection.module.scss';
 import Header from '../Header/Header';
+import ThemeSwitcher from '../ThemeSwitcher/ThemeSwitcher';
 
 const {
   hero,
@@ -11,7 +12,9 @@ const {
 const HeroSection = () => {
   return (
     <section className={hero}>
-      <div className={heroServices}></div>
+      <div className={heroServices}>
+        <ThemeSwitcher />
+      </div>
       <div className={heroLine}></div>
       <Header />
     </section>
